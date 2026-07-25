@@ -1,184 +1,267 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ten X Better Projects | Construction & Civil Engineering</title>
-<link rel="stylesheet" href="css/style.css">
+<title>Smart Zambian Class System</title>
+
+<style>
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#f1f5f9;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+h1{
+text-align:center;
+color:#1e3a8a;
+}
+
+button{
+padding:10px 15px;
+background:#1e3a8a;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+margin:5px 0;
+}
+
+select,input{
+padding:8px;
+border-radius:6px;
+border:1px solid #ccc;
+margin:5px 0;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:#1e3a8a;
+color:white;
+padding:10px;
+}
+
+td{
+padding:8px;
+border-bottom:1px solid #ddd;
+}
+
+.grade-good{color:green;font-weight:bold;}
+.grade-mid{color:orange;font-weight:bold;}
+.grade-bad{color:red;font-weight:bold;}
+
+#saveMessage{
+color:green;
+font-weight:bold;
+}
+
+</style>
 </head>
+
 <body>
 
-<nav class="nav">
-  <div class="wrap">
-    <a href="index.html" class="nav-logo"><span class="x">X</span> Ten X Better Projects</a>
-    <div class="nav-links" id="navLinks">
-      <a href="index.html" class="active">Home</a>
-      <a href="apply.html">Apply</a>
-      <a href="track.html">Track My Application</a>
-      <a href="showcase.html">What We Do</a>
-    </div>
-    <button class="nav-toggle" id="navToggle">&#9776;</button>
-  </div>
-</nav>
+<div class="container">
 
-<header class="blueprint-hero">
-  <div class="wrap">
-    <div class="eyebrow">Construction &amp; Civil Engineering — Zambia</div>
-    <h1 class="hero-title">We build ten times<br><span class="accent">better,</span> not ten times louder.</h1>
-    <p class="hero-sub">From site visit to handover, we plan, price, and construct your house, warehouse, or commercial building — with weekly reports so you always know where things stand.</p>
-    <div class="hero-ctas">
-      <a href="apply.html" class="btn btn-primary">Start an Application →</a>
-      <a href="track.html" class="btn btn-ghost">Track Existing Application</a>
-    </div>
-  </div>
-</header>
+<h1>📚 Smart Zambian Class System</h1>
 
-<section>
-  <div class="wrap">
-    <div class="eyebrow" style="color:var(--brick)">Our Services</div>
-    <h2 class="section-title">Everything under one contract.</h2>
-    <p class="section-lede">We don't hand you off between subcontractors. One team, one bill of quantities, one point of accountability from plan to plaster.</p>
+<div class="card">
+<h3>Add Student</h3>
 
-    <div class="ledger">
-      <div class="ledger-row">
-        <div class="mono">SRV—01</div>
-        <h3>Construction &amp; Civil Works</h3>
-        <div class="tag">GROUND UP</div>
-      </div>
-      <div class="ledger-row">
-        <div class="mono">SRV—02</div>
-        <h3>Consultancy &amp; Construction Management</h3>
-        <div class="tag">ADVISORY</div>
-      </div>
-      <div class="ledger-row">
-        <div class="mono">SRV—03</div>
-        <h3>Labour Hire</h3>
-        <div class="tag">ON-SITE</div>
-      </div>
-      <div class="ledger-row">
-        <div class="mono">SRV—04</div>
-        <h3>Machinery Hiring</h3>
-        <div class="tag">EQUIPMENT</div>
-      </div>
-      <div class="ledger-row">
-        <div class="mono">SRV—05</div>
-        <h3>Bill of Quantities (BOQ) Generation</h3>
-        <div class="tag">COSTING</div>
-      </div>
-      <div class="ledger-row">
-        <div class="mono">SRV—06</div>
-        <h3>Title Deed Processing</h3>
-        <div class="tag">LEGAL</div>
-      </div>
-      <div class="ledger-row">
-        <div class="mono">SRV—07</div>
-        <h3>Planning &amp; Design of Any Structure</h3>
-        <div class="tag">DESIGN</div>
-      </div>
-    </div>
-  </div>
-</section>
+<input type="text" id="studentName" placeholder="Student Name">
 
-<section style="background:var(--white); border-top:1px solid var(--plaster-line); border-bottom:1px solid var(--plaster-line);">
-  <div class="wrap">
-    <div class="eyebrow" style="color:var(--brick)">How It Works</div>
-    <h2 class="section-title">From site visit to handover.</h2>
-    <p class="section-lede">The same procedure we run internally — visible to you at every stage once you apply.</p>
+<select id="gender">
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+</select>
 
-    <div class="procedure">
-      <div class="proc-row">
-        <div class="proc-num">01</div>
-        <p><strong>Site Visit.</strong> We assess your plot, access roads, and terrain before anything is priced.</p>
-      </div>
-      <div class="proc-row">
-        <div class="proc-num">02</div>
-        <p><strong>Design.</strong> We draft a plan for you, or work from one you already have.</p>
-      </div>
-      <div class="proc-row">
-        <div class="proc-num">03</div>
-        <p><strong>Bill of Quantities.</strong> A full costed breakdown of materials and labour, no surprises later.</p>
-      </div>
-      <div class="proc-row">
-        <div class="proc-num">04</div>
-        <p><strong>Contract Agreement.</strong> Terms, timeline, and payment plan signed by both sides.</p>
-      </div>
-      <div class="proc-row">
-        <div class="proc-num">05</div>
-        <p><strong>Mobilization Payment.</strong> 25%–75% deposit to begin, depending on scope.</p>
-      </div>
-      <div class="proc-row">
-        <div class="proc-num">06</div>
-        <p><strong>Work Schedule.</strong> We prepare and share a build timeline before breaking ground.</p>
-      </div>
-      <div class="proc-row">
-        <div class="proc-num">07</div>
-        <p><strong>Weekly Reports.</strong> You receive progress photos and updates every week, start to finish.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<button onclick="addStudent()">Add Student</button>
 
-<section>
-  <div class="wrap">
-    <div class="dim-divider"><span class="mono">READY TO BUILD?</span></div>
-    <div class="card-grid">
-      <div class="card">
-        <h3 style="margin-bottom:8px;">Apply for a Project</h3>
-        <p style="color:var(--ink-soft); font-size:14px; margin-bottom:18px;">Tell us what you want to build and get an application reference in minutes.</p>
-        <a href="apply.html" class="btn btn-primary btn-block">Start Application</a>
-      </div>
-      <div class="card">
-        <h3 style="margin-bottom:8px;">Track Your Build</h3>
-        <p style="color:var(--ink-soft); font-size:14px; margin-bottom:18px;">Already applied? Check status and progress with your phone or NRC number.</p>
-        <a href="track.html" class="btn btn-dark btn-block">Track Application</a>
-      </div>
-      <div class="card">
-        <h3 style="margin-bottom:8px;">See Our Work</h3>
-        <p style="color:var(--ink-soft); font-size:14px; margin-bottom:18px;">Browse photos and videos from completed and in-progress projects.</p>
-        <a href="showcase.html" class="btn btn-ghost btn-block" style="border-color:#DDD6C8; color:var(--ink);">What We Do</a>
-      </div>
-    </div>
-  </div>
-</section>
+<br><br>
 
-<div class="contact-strip">
-  <div class="wrap">
-    <div class="mono" style="font-size:13px; opacity:0.7;">FOR MORE INFORMATION</div>
-    <div class="numbers">
-      <span>+260 969 192 247</span>
-      <span>+260 979 144 524</span>
-      <span>+260 777 992 356</span>
-    </div>
-  </div>
+<select id="subject" onchange="loadData()">
+<option>Mathematics</option>
+<option>English</option>
+<option>Science</option>
+<option>Social Studies</option>
+</select>
+
+<select id="term" onchange="loadData()">
+<option>Term 1</option>
+<option>Term 2</option>
+<option>Term 3</option>
+</select>
+
 </div>
 
-<div class="social-bar">
-  <div class="wrap">
-    <div class="label">Follow &amp; Share</div>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/profile.php?id=61588738375242" target="_blank" rel="noopener" aria-label="Facebook">
-        <svg viewBox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
-      </a>
-      <a href="https://www.instagram.com/10xbetterproject/" target="_blank" rel="noopener" aria-label="Instagram">
-        <svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.21.6 1.76 1.15.5.5.9 1.1 1.15 1.76.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.76 4.9 4.9 0 0 1-1.76 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.76-1.15 4.9 4.9 0 0 1-1.15-1.76c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.21 1.15-1.76A4.9 4.9 0 0 1 5.45 2.53c.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.28 2 12 2zm0 1.8c-2.67 0-2.99.01-4.04.06-.87.04-1.34.18-1.65.3-.42.16-.71.35-1.02.66-.31.31-.5.6-.66 1.02-.12.31-.26.78-.3 1.65-.05 1.05-.06 1.37-.06 4.04s.01 2.99.06 4.04c.04.87.18 1.34.3 1.65.16.42.35.71.66 1.02.31.31.6.5 1.02.66.31.12.78.26 1.65.3 1.05.05 1.37.06 4.04.06s2.99-.01 4.04-.06c.87-.04 1.34-.18 1.65-.3.42-.16.71-.35 1.02-.66.31-.31.5-.6.66-1.02.12-.31.26-.78.3-1.65.05-1.05.06-1.37.06-4.04s-.01-2.99-.06-4.04c-.04-.87-.18-1.34-.3-1.65a2.75 2.75 0 0 0-.66-1.02 2.75 2.75 0 0 0-1.02-.66c-.31-.12-.78-.26-1.65-.3-1.05-.05-1.37-.06-4.04-.06zm0 4.58a5.62 5.62 0 1 1 0 11.24 5.62 5.62 0 0 1 0-11.24zm0 1.8a3.82 3.82 0 1 0 0 7.64 3.82 3.82 0 0 0 0-7.64zm5.84-1.99a1.31 1.31 0 1 1-2.63 0 1.31 1.31 0 0 1 2.63 0z"/></svg>
-      </a>
-      <a href="https://vm.tiktok.com/ZS9rq2JGFmb5u-qh60j/" target="_blank" rel="noopener" aria-label="TikTok">
-        <svg viewBox="0 0 24 24"><path d="M16.6 5.82c-.9-.98-1.4-2.26-1.4-3.62h-3.14v13.7a2.9 2.9 0 1 1-2.06-2.78V9.9a6.06 6.06 0 1 0 5.2 6v-7.02a7.6 7.6 0 0 0 4.4 1.4V7.16a4.3 4.3 0 0 1-3-1.34z"/></svg>
-      </a>
-    </div>
-  </div>
+<div class="card">
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Gender</th>
+<th>Score</th>
+<th>Grade</th>
+<th>Remark</th>
+</tr>
+</thead>
+<tbody id="table"></tbody>
+</table>
 </div>
 
-<footer>
-  © <span id="year"></span> Ten X Better Projects Limited. Built ten times better.
-</footer>
+<div class="card">
+<h3>Class Average</h3>
+<canvas id="chart" height="120"></canvas>
+</div>
+
+<div class="card" style="text-align:center;">
+<button onclick="manualSave()">Save Class Data</button>
+<button onclick="exportCSV()">Export to Excel</button>
+<button onclick="window.print()">Export to PDF</button>
+<p id="saveMessage"></p>
+</div>
+
+</div>
 
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  document.getElementById('navToggle').addEventListener('click', () => {
-    document.getElementById('navLinks').classList.toggle('open');
-  });
+
+let pupils=[];
+
+/* STORAGE KEY */
+function key(){
+return subject.value+"-"+term.value;
+}
+
+/* ADD STUDENT */
+function addStudent(){
+let name=document.getElementById("studentName").value.trim();
+let gender=document.getElementById("gender").value;
+
+if(!name) return alert("Enter student name");
+
+pupils.push({
+name:name,
+gender:gender,
+score:0
+});
+
+document.getElementById("studentName").value="";
+saveData();
+render();
+}
+
+/* GRADE SYSTEM */
+function grade(score){
+if(score>=75)return {g:1,r:"Distinction",c:"grade-good"};
+if(score>=65)return {g:3,r:"Merit",c:"grade-mid"};
+if(score>=50)return {g:6,r:"Credit",c:"grade-mid"};
+if(score>=40)return {g:8,r:"Pass",c:"grade-mid"};
+return {g:9,r:"Fail",c:"grade-bad"};
+}
+
+/* UPDATE SCORE */
+function update(i,val){
+let s=parseInt(val)||0;
+s=Math.max(0,Math.min(100,s));
+pupils[i].score=s;
+saveData();
+render();
+}
+
+/* RENDER */
+function render(){
+table.innerHTML=pupils.map((p,i)=>{
+let g=grade(p.score);
+return `
+<tr>
+<td>${p.name}</td>
+<td>${p.gender}</td>
+<td><input type="number" value="${p.score}"
+oninput="update(${i},this.value)" style="width:70px"></td>
+<td class="${g.c}">${g.g}</td>
+<td>${g.r}</td>
+</tr>
+`;
+}).join("");
+
+drawChart();
+}
+
+/* SAVE */
+function saveData(){
+localStorage.setItem(key(),JSON.stringify(pupils));
+}
+
+function manualSave(){
+saveData();
+document.getElementById("saveMessage").innerText="✔️ Data Saved!";
+setTimeout(()=>{document.getElementById("saveMessage").innerText="";},3000);
+}
+
+/* LOAD */
+function loadData(){
+let data=localStorage.getItem(key());
+if(data){
+pupils=JSON.parse(data);
+render();
+}else{
+pupils=[];
+table.innerHTML="";
+drawChart();
+}
+}
+
+/* EXPORT CSV */
+function exportCSV(){
+let csv="Name,Gender,Score,Grade,Remark\n";
+pupils.forEach(p=>{
+let g=grade(p.score);
+csv+=${p.name},${p.gender},${p.score},${g.g},${g.r}\n;
+});
+let blob=new Blob([csv],{type:"text/csv"});
+let a=document.createElement("a");
+a.href=URL.createObjectURL(blob);
+a.download="class_report.csv";
+a.click();
+}
+
+/* CHART */
+function drawChart(){
+let ctx=chart.getContext("2d");
+ctx.clearRect(0,0,chart.width,chart.height);
+
+let avg=0;
+if(pupils.length){
+avg=pupils.reduce((a,b)=>a+b.score,0)/pupils.length;
+}
+
+ctx.fillStyle="#1e3a8a";
+ctx.fillRect(20,50,avg*3,30);
+ctx.fillStyle="black";
+ctx.fillText("Average: "+Math.round(avg)+"%",20,40);
+}
+
+/* LOAD ON START */
+window.onload=loadData;
+
 </script>
+
 </body>
 </html>
-
